@@ -11,7 +11,7 @@ import java.time.Duration;
 public class P03_fakliDriverKullanim {
     public static void main(String[] args) {
 
-        WebDriverManager.firefoxdriver().setup();
+        WebDriverManager.firefoxdriver().setup(); //Firefox yüklü değil ise bir sonraki satır hata verir
         WebDriver driver=new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
